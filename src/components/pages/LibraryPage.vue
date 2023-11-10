@@ -1,21 +1,19 @@
 <script>
-// import MyComponent from "./components/MyComponent.vue";
+import BooksList from "../books/BooksList.vue";
 
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
 
-  // components: {
-  //   MyComponent,
-  // },
+  components: {
+    BooksList,
+  },
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <BooksList></BooksList>
 </template>
 
 <style lang="scss" scoped></style>
