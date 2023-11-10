@@ -15,7 +15,6 @@ export default {
   },
 
   created() {
-    console.log(this.$route.params.id);
     axios
       .get(this.baseUrl + "books/" + this.$route.params.id)
       .then((response) => {

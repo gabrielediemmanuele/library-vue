@@ -17,6 +17,11 @@ export default {
 
 <template>
   <div class="col mt-5 mb-5">
+    <div class="card-footer mb-3" v-if="detailView">
+      <router-link :to="{ name: 'library' }" class="btn btn-danger mt-1"
+        >Torna alla libreria -></router-link
+      >
+    </div>
     <div class="card h-100">
       <div class="card-body">
         <h4><strong>Id:</strong> {{ book.id }}</h4>
@@ -54,12 +59,6 @@ export default {
         :to="{ name: 'book-detail', params: { id: book.id } }"
         class="btn btn-primary mt-1"
         >Vedi</router-link
-      >
-    </div>
-
-    <div class="card-footer" v-if="detailView">
-      <router-link :to="{ name: 'library' }" class="btn btn-danger mt-1"
-        >Torna alla libreria -></router-link
       >
     </div>
   </div>
