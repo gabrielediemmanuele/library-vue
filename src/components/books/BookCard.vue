@@ -49,7 +49,7 @@ export default {
         </li>
       </ul>
     </div>
-    <div class="card-footer">
+    <div class="card-footer" v-if="!detailView">
       <router-link
         :to="{ name: 'library', params: { id: book.id } }"
         class="btn btn-primary mt-1"

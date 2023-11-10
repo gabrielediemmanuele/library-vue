@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 /* importare le pagine  */
 import HomePage from "./components/pages/HomePage.vue";
 import LibraryPage from "./components/pages/LibraryPage.vue";
+import BookPage from "./components/pages/BookPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,6 +17,11 @@ const router = createRouter({
       path: "/library",
       name: "library",
       component: LibraryPage,
+    },
+    {
+      path: "/library/:id",
+      name: "book-detail",
+      component: BookPage,
     },
   ],
 });
