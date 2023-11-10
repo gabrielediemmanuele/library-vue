@@ -3,9 +3,7 @@
 
 export default {
   data() {
-    return {
-      title: "Hello world",
-    };
+    return {};
   },
 
   // components: {
@@ -15,7 +13,9 @@ export default {
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <div class="container mt-3">
+    <h1>Non siamo stati pagati abbastanza per fare la HomePage 🎉😁</h1>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>
