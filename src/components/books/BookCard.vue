@@ -19,12 +19,12 @@ export default {
   <div class="col mt-5 mb-5">
     <div class="card-footer mb-3" v-if="detailView">
       <router-link :to="{ name: 'library' }" class="btn btn-danger mt-1"
-        >Torna alla libreria -></router-link
+        >Torna alla libreria ➡</router-link
       >
     </div>
     <div class="card h-100">
       <div class="card-body">
-        <h4><strong>Id:</strong> {{ book.id }}</h4>
+        <h6><strong>📕Id:</strong> {{ book.id }}</h6>
         <h5 class="text-success"><strong>Title:</strong> {{ book.title }}</h5>
       </div>
       <ul class="list-group list-group-flush">
@@ -58,7 +58,7 @@ export default {
       <router-link
         :to="{ name: 'book-detail', params: { id: book.id } }"
         class="btn btn-primary mt-1"
-        >Vedi</router-link
+        >Vedi 👀</router-link
       >
     </div>
   </div>
