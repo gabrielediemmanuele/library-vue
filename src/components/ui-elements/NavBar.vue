@@ -17,8 +17,10 @@ export default {
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark p-0 mb-2">
     <div class="container-fluid bg-dark p-2">
-      <router-link class="navbar-brand text-light" :to="{ name: 'library' }"
-        >MyProject</router-link
+      <router-link
+        class="navbar-brand text-light fw-bold"
+        :to="{ name: 'library' }"
+        >Library 🏩</router-link
       >
       <button
         class="navbar-toggler bg-light"
@@ -46,7 +48,7 @@ export default {
               class="nav-link active text-light"
               aria-current="page"
               :to="{ name: 'library' }"
-              >Portfolio</router-link
+              >Books List</router-link
             >
           </li>
         </ul>

@@ -16,7 +16,8 @@ export default {
   methods: {
     fetchBooks(uri = this.baseUrl + "books") {
       axios.get(uri).then((response) => {
-        this.books = response.data.data;
+        this.books = response.data;
+        console.log(this.books);
       });
     },
   },
@@ -29,7 +30,7 @@ export default {
 
 <template>
   <div class="container">
-    <h2 class="mb-3">Books List</h2>
+    <h2 class="mb-3">📚Books List</h2>
 
     <div class="row row-cols-3">
       <BookCard v-for="book in books" :book="book"></BookCard>

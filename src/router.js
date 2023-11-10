@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 /* importare le pagine  */
-import HomePage from "./pages/HomePage.vue";
-import LibraryPage from "./pages/LibraryPage.vue";
+import HomePage from "./components/pages/HomePage.vue";
+import LibraryPage from "./components/pages/LibraryPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
