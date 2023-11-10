@@ -18,7 +18,7 @@ export default {
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark p-0 mb-2">
     <div class="container-fluid bg-dark p-2">
       <router-link
-        class="navbar-brand text-light fw-bold"
+        class="navbar-brand text-light fw-bold mx-2"
         :to="{ name: 'library' }"
         >Library 🏩</router-link
       >
@@ -34,7 +34,7 @@ export default {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-2">
           <li class="nav-item">
             <router-link
               class="nav-link active text-light"
